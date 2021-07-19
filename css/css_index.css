@@ -13,6 +13,20 @@ body{
 	overflow-x: hidden;
 }
 
+.titulo_codac{
+	display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+	font-size: 50px;
+	margin-top: -40px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+#ajustes_logo_index{
+	
+	
+}
+
 .header{
 	height: 100vh;
 	display: flex;
@@ -54,8 +68,9 @@ body{
 }
 
 .header-content{
-	z-index: 10;
+	z-index: 2;
 }
+
 .header-content h1{
 	font-size: 70px;
 	margin-bottom: 0;
