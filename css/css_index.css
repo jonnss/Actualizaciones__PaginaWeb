@@ -1,0 +1,111 @@
+<style>
+			 
+*{
+   
+   box-sizing: border-box;
+}
+			     
+body 
+{			
+    margin: 0;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #333;
+	overflow-x: hidden;
+}
+
+.header{
+	 height: 100vh;
+	 display: flex;
+	 align-items: center;
+	 color: #fff;
+}
+
+.content{
+	max-width: 40rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: auto;
+	text-align: center;
+}
+
+.header-video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	
+}
+.header-video video{
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.header-overlay{
+	 height: 100vh;
+	 width: 100vw;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 background: #303952;
+	 z-index: 1;
+	 opacity: .5;
+}
+
+.header-content{
+	z-index: 2;
+}
+.header-content h1{
+	font-size: 70px;
+	margin-bottom: 0;
+	font-family: 'Overpass', sans-serif;
+}
+			
+@media (max-width: 960px){
+	.content{
+		padding: 0 3rem 0 3rem;
+	}
+}
+
+.button{
+    position:relative;
+    padding:1em 1.5em;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+    outline:0;
+    font-size:18px;
+    margin:1em .8em
+}
+.button.type3{
+    color: white;
+}
+.button.type3.type3::after,.button.type3.type3::before{
+    content:"";
+    display:block;
+    position:absolute;
+    width:20%;
+    height:20%;
+    border:2px solid;
+    transition:all .6s ease;
+    border-radius:2px
+}
+.button.type3.type3::after{
+    bottom:0;
+    right:0;
+    border-color:transparent transparent transparent transparent
+}
+.button.type3.type3::before{
+    top:0;
+    left:0;
+    border-color: transparent transparent transparent transparent
+}
+.button.type3.type3:hover:after,.button.type3.type3:hover:before{
+    border-color: white;
+    width:100%;
+    height:100%
+}
+
+</style>
