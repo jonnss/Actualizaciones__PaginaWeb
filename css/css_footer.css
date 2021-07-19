@@ -54,7 +54,7 @@ ul{
 	text-decoration: none;
 	font-weight: 300; /*Grosor de las letras*/
 	color: #bbbbbb;
-	display: inline-block;
+	display: inline-block; /* hover unicamente en las letras*/
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
