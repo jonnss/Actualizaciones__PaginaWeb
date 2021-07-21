@@ -22,11 +22,6 @@ body{
 	text-align: center;
 }
 
-#ajustes_logo_index{
-	
-	
-}
-
 .header{
 	height: 100vh;
 	display: flex;
@@ -65,16 +60,19 @@ body{
 	background: #303952;
 	z-index: 1;
 	opacity: .5;
+	
 }
 
 .header-content{
 	z-index: 2;
+	
 }
 
 .header-content h1{
 	font-size: 70px;
 	margin-bottom: 0;
 	font-family: 'Overpass', sans-serif;
+	justify-content: center;
 }
 			
 @media (max-width: 960px){
