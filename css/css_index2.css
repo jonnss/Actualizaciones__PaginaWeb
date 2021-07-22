@@ -21,7 +21,7 @@ body{
     margin-top: -15px;
 }
 
-.contenedor_principal{
+.container_principal{
     padding: 10px;
     width: 100%;
     max-width: 1500px;
@@ -32,7 +32,7 @@ body{
     padding: 10px;
 }
 
-.contenedor_titulo-bienvenido{
+.container_titulo-bienvenido{
     font-family: "Poppins", sans-serif;
     text-align: center;
     color: white;
@@ -43,14 +43,14 @@ body{
     text-align: center;
     box-sizing: border-box; 
 }
-.contenedor_buttons{
+.container_buttons{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 150px;
 }
 
 /* CSS Botones de iniciar sesión - registrarse*/
-.button_index{
+.buttons_index{
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     margin-top: 40px;
@@ -70,7 +70,7 @@ body{
     margin: 10px
 }
 
-.button_index:hover{
+.buttons_index:hover{
     background-color: #04275f;
     border-color: #04275f;
     transition: all 0.7s ease;
@@ -80,11 +80,11 @@ body{
     #logo_index{
         width: 37%;
     }
-    .contenedor_titulo-bienvenido{
+    .container_titulo-bienvenido{
         margin-top: 90px;
         font-size: 33px;
     }
-    .button_index{
+    .buttons_index{
         width: 30%;
         font-size: 13px;
     }
