@@ -14,32 +14,52 @@
 	
  <body>
     <div class="contenedor_principal">
-     <header class="header_principal">   
-        <div class="contenedor_centrar">
+       <header class="header_principal">   
+          <div>
             <img id="logo_index"src="imagenes/Logo2.png" width="200px" />
+          </div>
+       </header>
+    
+        <div class="contenedor_titulo-bienvenido">
+          <p id="titulo_bienvenido">¡Bienvenido!, ¿Qué quieres hacer?</p>   
         </div>
-     </header>
-    
-        <div class="contenedor_titulo-botones">
-            <p id="titulo_bienvenido">¡Bienvenido!, ¿Qué quieres hacer?</p>
-            <button class="button_index" onclick="location.href='formulario_iniciar-sesion.html'">Iniciar sesión</button>
-            
-            <button class="button_index" onclick="location.href='formulario_registrarse.html'">Registrarme</button>
-            
-            <div class="sub-contenedor-iconos_index">
-             <div class="sub-contenedor_inlineblock" id="icono1_index">
-                <i class="fas fa-user-friends"></i>
-             </div>
 
-             <div class="sub-contenedor_inlineblock" id="icono2_index">
-                <i class="fas fa-user-check"></i>
-             </div>
+        <div class="contenedor_buttons">
+          <button class="button_index" onclick="location.href='formulario_iniciar-sesion.html'">Iniciar sesión</button>     
+          <button class="button_index" onclick="location.href='formulario_registrarse.html'">Registrarme</button>    
+        </div>
+    </div> 
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sobre la página web.</h4>
+                    <ul>
+                        <li><a href="#">Misión y Visión</a></li>
+                        <li><a href="#">Objetivos</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Obtener Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Cómo registrarme</a></li>
+                        <li><a href="#">Cómo buscar un problema</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siguénos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f" id="icon-fb"></i></a>
+                        <a href="#"><i class="fab fa-twitter" id="icon-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram" id="icon-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>     
-    
-     
-    </div>
-    
-    <script src="https://kit.fontawesome.com/9654fb2e68.js" crossorigin="anonymous"></script>
+        </div>
+   </footer>
+ <script src="https://kit.fontawesome.com/9654fb2e68.js" crossorigin="anonymous"></script>
  </body>
 </html>
