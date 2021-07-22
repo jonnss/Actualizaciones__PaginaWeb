@@ -2,51 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
-    margin: auto;
-    padding: auto;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 
 body{
-    background-image: url(../imagenes/Fondo5.jpg);
+    background-image: url(../imagenes/Fondo7.jpg);
     background-position: center center;
     background-size:cover; /*Ajusta la imagen real a la pantalla*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Poppins", sans-serif;
 }
+
 #logo_index{
-    text-align: center;
+    display: block;
+    margin: auto;
 }
+
 .contenedor_principal{
     padding: 10px;
     width: 100%;
+    max-width: 1500px;
     box-sizing: border-box;
 }
+
 .header_principal{
     margin: 5px;
 }
 
-#titulo_codac{
-    color: white;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 40px; /*Tamaño de titulo*/
-    font-weight:500; /*Grosor del titulo: Bienvenidos*/
-    margin-top: -20px;
-}
-
-.contenedor_titulo_bienvenido{
+.contenedor_titulo-botones{
     text-align: center;
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 15px;
+    margin: 60px 5px 5px 5px;
+    height: 200px;
+    text-align: center;
+    box-sizing: border-box; 
 }
 
-.contenedor_titulo-botones{
-    text-align: center;
-    margin-top: 100px;
-    box-sizing: border-box;
+.iconos_index{
+    display: inline-block;
+    font-size: 30px;
 }
 
 /* CSS Botones de iniciar sesión - registrarse*/
@@ -85,28 +86,20 @@ body{
     border-color: transparent transparent transparent transparent
 }
 .button.type3.type3:hover:after,.button.type3.type3:hover:before{
-    border-color: white;
+    border-color: transparent;
+    -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
     width:100%;
     height:100%
 }
 
-@media screen and (max-width: 800px){
-
-    .contenedor_principal{
-        width: 100%;
-    }
+@media screen and (max-width: 800px) {
     #logo_index{
-        width: 30%;
-    }
-    .contenedor_centrar{
-        width: 100%;
+        width: 35%;
     }
     .contenedor_titulo-botones{
-        width: 100%;
+        font-size: 22px;
     }
-
-    #titulo_bienvenido{
-        width: 30%;
-    }
-    
 }
