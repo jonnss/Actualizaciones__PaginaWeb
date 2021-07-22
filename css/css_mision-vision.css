@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagenes/Fondo4.jpg);
+    background-position: center center;
+    background-size:cover; /*Ajusta la imagen real a la pantalla*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container_principal{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section_titulo_mision-vision{
+    padding: 15px;
+    font-size: 40px;
+    font-weight: 450;
+    color: white;
+    box-sizing: border-box;
+}
+
+.container-box{
+    padding: 7px;
+    margin: 50px 160px 0px 160px;
+    height: 350px;
+    border: 1.5px solid #69ca62;
+    box-sizing: border-box;
+}
+
+.section_parrafo{
+    padding: 5px;
+    border: 1.5px solid #04275f;
+    height: 350px;
+}
+
+.container-box .section_parrafo p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 100px 20px 30px 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px){
+    .container_principal{
+        width: 100%;
+    }
+    .section_titulo_mision-vision{
+        font-size: 28px;
+    }
+    .container-box{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 250px;
+    }
+    .section_parrafo{
+        padding: 0;
+        margin: 5px;
+        width: 100%;
+        height: 250px;
+    }
+}
