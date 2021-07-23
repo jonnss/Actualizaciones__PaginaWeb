@@ -1,122 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-		 
+
 *{
-   box-sizing: border-box;
-}
-			     
-body{			
     margin: 0;
-	font-size: 1rem;
-	line-height: 1.5;
-	color: #333;
-	overflow-x: hidden;
+    padding: 0;   
 }
 
-.titulo_codac{
-	display: inline-block;
-    font-family: 'Kaushan Script', cursive;
-	font-size: 50px;
-	margin-top: -40px;
-	padding-bottom: 80px;
-	text-align: center;
+body{
+    background-image: url(../imagenes/Fondo7.jpg);
+    background-position: center center;
+    background-size:cover; /*Ajusta la imagen real a la pantalla*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
 }
 
-.header{
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	color: #fff;
+#logo_index{
+    display: block;
+    margin: auto;
+    margin-top: -15px;
 }
 
-.content{
-	max-width: 40rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin: auto;
-	text-align: center;
+.container_principal{
+    padding: 10px;
+    width: 100%;
+    max-width: 1500px;
+    box-sizing: border-box;
 }
 
-.header-video{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	
-}
-.header-video video{
-	min-width: 100%;
-	min-height: 100%;
+.header_principal{
+    padding: 10px;
 }
 
-.header-overlay{
-	height: 100vh;
-	width: 100vw;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #303952;
-	z-index: 1;
-	opacity: .5;
-	
-}
-
-.header-content{
-	z-index: 2;
-	
-}
-
-.header-content h1{
-	font-size: 70px;
-	margin-bottom: 0;
-	font-family: 'Overpass', sans-serif;
-	justify-content: center;
-}
-			
-@media (max-width: 960px){
-	.content{
-		padding: 0 3rem 0 3rem;
-	}
-}
-
-/*CSS BOTONES INICIAR SESIÓN Y REGISTRARSE*/
-.button{
-    position:relative;
-    padding:1em 1.5em;
-    border:none;
-    background-color:transparent;
-    cursor:pointer;
-    outline:0;
-    font-size:18px;
-    margin:1em .8em
-}
-.button.type3{
+.container_titulo-bienvenido{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
     color: white;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 60px;
+    text-align: center;
+    box-sizing: border-box; 
 }
-.button.type3.type3::after,.button.type3.type3::before{
-    content:"";
-    display:block;
-    position:absolute;
-    width:20%;
-    height:20%;
-    border:2px solid;
-    transition:all .6s ease;
-    border-radius:2px
+.container_buttons{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 150px;
 }
-.button.type3.type3::after{
-    bottom:0;
-    right:0;
-    border-color:transparent transparent transparent transparent
+
+/* CSS Botones de iniciar sesión - registrarse*/
+.buttons_index{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display:inline-block;
+	height: 45px;
+	line-height: 40px;
+	width: 17%;
+	background-color: transparent;/*Color caja de texto enviar*/
+	color: white; /*Color de letras enviar */
+	font-weight: bold;
+	border-radius: 55px;
+	cursor: pointer;
+	transition: .1s ease all;
+	border: 2.7px solid #f0f0f0;
+	border-color: white;
+    margin: 10px
 }
-.button.type3.type3::before{
-    top:0;
-    left:0;
-    border-color: transparent transparent transparent transparent
+
+.buttons_index:hover{
+    background-color: #04275f;
+    border-color: #04275f;
+    transition: all 0.7s ease;
 }
-.button.type3.type3:hover:after,.button.type3.type3:hover:before{
-    border-color: white;
-    width:100%;
-    height:100%
+
+@media screen and (max-width: 800px) {
+    #logo_index{
+        width: 37%;
+    }
+    .container_titulo-bienvenido{
+        margin-top: 90px;
+        font-size: 33px;
+    }
+    .buttons_index{
+        width: 30%;
+        font-size: 13px;
+    }
 }
