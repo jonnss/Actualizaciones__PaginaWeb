@@ -30,7 +30,7 @@ body{
 
 .section_parrafo{
     padding: 5px;
-    margin: 50px 200px 5px 200px;
+    margin: 20px 200px 5px 200px;
     border: 1.5px solid white;
     height: 280px;
     border-radius: 10px;
@@ -51,11 +51,15 @@ body{
 }
 
 @media screen and (max-width: 800px){
+
+    #logo_mision-vision{
+        width: 28%;
+    }
     .container_principal{
         width: 100%;
     }
     .section_titulo_mision-vision{
-        font-size: 28px;
+        font-size: 25px;
     }
     .section_parrafo{
         border: 1px solid white;
