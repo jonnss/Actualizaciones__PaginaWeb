@@ -22,7 +22,7 @@ body{
 
 .section_titulo_mision-vision{
     padding: 15px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 450;
     color: white;
     box-sizing: border-box;
@@ -58,6 +58,7 @@ body{
     }
     .container_principal{
         width: 100%;
+        margin-bottom: 120px;
     }
     .section_titulo_mision-vision{
         font-size: 25px;

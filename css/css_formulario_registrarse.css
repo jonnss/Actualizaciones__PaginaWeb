@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('../imagenes/Fondo3.png');
+    background-image: url('../imagenes/Fondo9.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -56,6 +56,7 @@ main {
 	background: #F2F2F2; /*Color fondo inputs*/
 	border: 3px solid transparent;
 	border-radius: 100px; /*Borde cajas inputs*/
+	border: 2.5px solid #0075FF;
 	height: 45px; /*Ancho de cajas inputs*/
 	line-height: 45px;
 	padding: 0 40px 0 10px;
