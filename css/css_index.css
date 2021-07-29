@@ -14,20 +14,20 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-
-    background-size:cover; /*Ajusta la imagen real a la pantalla*/
+   
 
    }
    
    .video{
     position: absolute;
-    max-width: 300%;
     width: 100%;
-    z-index: -1;
-    background-position: center center;
-    background-size:cover; /*Ajusta la imagen real a la pantalla*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 100%;
+    z-index: -5;
+    position: center center;
+    object-fit: fill;
+    overflow-x:scroll;
+    overflow-y:hidden;
+   
 
    }
 .header_principal p{
@@ -46,6 +46,7 @@
 }
 
 .container_principal{
+    position: relative;
     padding: 10px;
     width: 100%;
     max-width: 1500px;
@@ -70,7 +71,7 @@
 .container_buttons{
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 /* CSS Botones de iniciar sesión - registrarse*/
@@ -116,16 +117,5 @@
 
 @media(max-width: 800px){
     .video{
-     width: 150%;
-    }
-   }
-   @media(max-width: 650px){
-    .video{
-     width: 280%;
-    }
-   }
-   @media(max-width: 480px){
-    .video{ 
-     width: 300%;
-    }
+     width: 100%;
    }
