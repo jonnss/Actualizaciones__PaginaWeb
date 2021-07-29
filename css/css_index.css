@@ -6,15 +6,9 @@
     padding: 0;   
 }
 .contenido__video{
-    background: #7DD174;
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
     z-index: -1;
-   
 
    }
    
@@ -27,8 +21,6 @@
     object-fit: fill;
     overflow-x:scroll;
     overflow-y:hidden;
-   
-
    }
 .header_principal p{
     font-size: 40px;
