@@ -5,16 +5,31 @@
     margin: 0;
     padding: 0;   
 }
+.contenido__video{
+    background: #7DD174;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 
-body{
-    background-image: url(../imagenes/Fondo5.jpg);
+    background-size:cover; /*Ajusta la imagen real a la pantalla*/
+
+   }
+   
+   .video{
+    position: absolute;
+    max-width: 300%;
+    width: 100%;
+    z-index: -1;
     background-position: center center;
     background-size:cover; /*Ajusta la imagen real a la pantalla*/
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "Poppins", sans-serif;
-}
 
+   }
 .header_principal p{
     font-size: 40px;
     font-weight: 200;
@@ -98,3 +113,19 @@ body{
         font-size: 13px;
     }
 }
+
+@media(max-width: 800px){
+    .video{
+     width: 150%;
+    }
+   }
+   @media(max-width: 650px){
+    .video{
+     width: 280%;
+    }
+   }
+   @media(max-width: 480px){
+    .video{ 
+     width: 300%;
+    }
+   }
