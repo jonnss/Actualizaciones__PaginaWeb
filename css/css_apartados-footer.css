@@ -9,7 +9,7 @@ body{
     background-size:cover; /*Ajusta la imagen real a la pantalla*/
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "Poppins", sans-serif;
+    font-family: santiago;
     box-sizing: border-box;
 }
 
