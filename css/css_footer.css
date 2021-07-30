@@ -19,8 +19,9 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
-    padding: 30px 0;
+	margin-top: 80px;
+	background-color: black;
+    padding: 70px 0;
 }
 .footer-col{
    width: 30%;
@@ -74,7 +75,7 @@ ul{
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-	color: black;
+	color: #04275f;
 	background-color: white;
 }
 
