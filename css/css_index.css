@@ -54,15 +54,14 @@
     text-align: center;
     color: white;
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 550;
     padding: 10px;
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
     box-sizing: border-box; 
 }
 .container_buttons{
     text-align: center;
-    margin-top: 20px;
     margin-bottom: 100px;
 }
 
@@ -71,26 +70,26 @@
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     margin-top: 40px;
-    margin-bottom: 30px;
     display:inline-block;
 	height: 45px;
 	line-height: 40px;
 	width: 17%;
-	background-color: transparent;/*Color caja de texto enviar*/
+	background-color: #04275f;/*Color caja de texto enviar*/
 	color: white; /*Color de letras enviar */
 	font-weight: bold;
 	border-radius: 55px;
 	cursor: pointer;
 	transition: .1s ease all;
 	border: 2.7px solid #f0f0f0;
-	border-color: white;
+	border-color: #04275f;
     margin: 10px
 }
 
 .buttons_index:hover{
-    background-color: #04275f;
-    border-color: #04275f;
-    transition: all 0.7s ease;
+    background-color: #04279f;
+    border-color: #04279f;
+    transition: all 0.4s ease;
+    font-size: 19px;
 }
 
 @media screen and (max-width: 800px) {
@@ -98,7 +97,7 @@
         width: 37%;
     }
     .container_titulo-bienvenido{
-        margin-top: 90px;
+        margin-top: 30px;
         font-size: 33px;
     }
     .buttons_index{
