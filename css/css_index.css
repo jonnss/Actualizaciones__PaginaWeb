@@ -5,22 +5,17 @@
     margin: 0;
     padding: 0;   
 }
-.contenido__video{
-    overflow: hidden;
+
+body{
+    background-image: url('../imagenes/Fondo9.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     position: relative;
-    z-index: -1;
-   }
-   
-   .video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -5;
-    position: center center;
-    object-fit: fill;
-    overflow-x:scroll;
-    overflow-y:hidden;
-   }
+    font-family: "Poppins", sans-serif;	
+}
+
 .header_principal p{
     font-size: 40px;
     font-weight: 200;
@@ -79,16 +74,15 @@
 	border-radius: 55px;
 	cursor: pointer;
 	transition: .1s ease all;
-	border: 2.7px solid #f0f0f0;
-	border-color: #04275f;
-    margin: 10px
+	border: 2.7px solid;
+    border-color: #04275f;
+    margin: 10px;
 }
 
 .buttons_index:hover{
-    background-color: #04279f;
-    border-color: #04279f;
-    transition: all 0.4s ease;
-    font-size: 19px;
+    background-color: #04277f;
+    border-color: #04277f;
+    
 }
 
 @media screen and (max-width: 800px) {
