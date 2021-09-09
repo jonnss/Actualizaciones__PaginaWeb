@@ -30,6 +30,10 @@ body{
     margin-top: -15px;
 }
 
+.container-titulo-index{
+    margin-top: -30px;
+}
+
 .container_principal{
     position: relative;
     padding: 10px;
