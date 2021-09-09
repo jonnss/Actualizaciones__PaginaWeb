@@ -119,6 +119,8 @@ form.sign-in-form {
 }
 
 .btn { /*Iniciar Sesión*/
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
   width: 150px;
   background-color:#04275f;
   border: none;
@@ -126,7 +128,6 @@ form.sign-in-form {
   height: 49px;
   border-radius: 49px;
   color: white;
-  text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
   cursor: pointer;

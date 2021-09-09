@@ -19,8 +19,8 @@ ul{
 	list-style: none;
 }
 .footer{
-	margin-top: 80px;
-	background-color: black;
+	margin-top: 150px;
+	background:linear-gradient(30deg,#04275f, #081631, #044092);
     padding: 70px 0;
 }
 .footer-col{
@@ -30,7 +30,6 @@ ul{
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
-	text-transform: capitalize;
 	margin-bottom: 35px; /*Espacio entre cada apartado (relativo)*/
 	font-weight: 500;
 	position: relative;
@@ -43,7 +42,7 @@ ul{
 	background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
 	height: 2px;
 	box-sizing: border-box;
-	width: 80px;
+	width: 100px;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
