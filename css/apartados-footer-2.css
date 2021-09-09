@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-image: url(../imagenes/Fondo3.png);
+    background-position: center center;
+    background-size:cover; /*Ajusta la imagen real a la pantalla*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: santiago;
+    box-sizing: border-box;
+}
+
+.container_principal{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(30deg,#04275f, #081631, #044092);
+    height: 130px;
+}
+
+.container-titulo{
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section-parrafo{
+    color: white;
+    font-size: 22px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px){
+
+    #logo_mision-vision{
+        width: 28%;
+    }
+    .container_principal{
+        width: 100%;
+        margin-bottom: 120px;
+    }
+    .section_titulo_mision-vision{
+        font-size: 25px;
+    }
+    .section_parrafo{
+        border: 1px solid white;
+        box-shadow: 0px 0px 3px 1px white;
+        margin: 35px;
+        height: 200px;
+    }
+    .section_parrafo p{
+        font-size: 14px;
+    }
+}

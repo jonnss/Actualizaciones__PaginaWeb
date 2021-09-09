@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body{
-    background-image: url(../imagenes/Mano.jpg);
+    background-image: url(../imagenes/Fondo3.png);
     background-position: center center;
     background-size:cover; /*Ajusta la imagen real a la pantalla*/
     background-repeat: no-repeat;
@@ -20,23 +20,16 @@ header{
     padding: 0;
     margin: 0;
     background:linear-gradient(30deg,#04275f, #081631, #044092);
-    height: 140px;
+    height: 130px;
 }
 
 .container-titulo{
     padding: 20px;
-    font-size: 30px;
-    font-weight: 450;
+    font-size: 28px;
+    font-weight: 400;
     color: white;
     box-sizing: border-box;
     text-align: center;
-}
-
-.black{
-    padding: 0;
-    margin: 0;
-    height: 3px;
-    background-color: black;
 }
 
 .section-parrafo{
