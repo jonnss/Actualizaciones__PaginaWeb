@@ -134,6 +134,12 @@ form.sign-in-form {
   transition: 0.5s;
 }
 
+.error{
+  font-family: "Poppins", sans-serif;
+  color: red;
+  font-size: 15px;
+}
+
 .btn:hover {
   background-color: #04277f;
 }

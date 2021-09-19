@@ -1,7 +1,17 @@
+<?php
+
+if(isset($_POST['registrarme'])){
+  $usuario = $_POST['usuario'];
+  $correo = $_POST['correo'];
+  $pw = $_POST['pw'];
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
@@ -28,29 +38,30 @@
               <input type="password" placeholder="Contraseña" />
             </div>
             <input type="submit" class="btn solid" value="Iniciar Sesión"/>
-            
+          
           </form>
-          <form action="#" class="sign-up-form">
+          
+          
+          <form id="formulario" method="post" class="sign-up-form" action="#">
             <h2 class="title">Registrarme</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Usuario" />
+              <input type="text" placeholder="Usuario" id="usuario" name="usuario"/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Correo" />
+              <input type="email" placeholder="Correo" id="correo" name="correo"/>
+              
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" />
+              <input type="password" placeholder="Contraseña" id="pw" name="pw" />
             </div>
-              <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Repetir contraseña" />
-            </div>
-            <input type="submit" class="btn" value="Registrarme" />
-            
+            <input type="submit" class="btn" onclick="" value="Registrarme" name="registrarme"/>
+            <p id="error" class="error"></p>
           </form>
+          
+
         </div>
       </div>
 
@@ -86,5 +97,7 @@
       
 
     <script src="js/mainform.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/validar.js"></script>
   </body>
 </html>
