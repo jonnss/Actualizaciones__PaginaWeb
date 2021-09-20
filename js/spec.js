@@ -20,6 +20,7 @@ function expresionCorreo(correo) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(correo);
 }
 
+
 form.addEventListener('submit', e => {
 
 	
@@ -37,7 +38,7 @@ form.addEventListener('submit', e => {
 			e.preventDefault();
 			setErrorFor(usuario, 'Nombre de usuario muy corto.');	
 		}
-		else if(usuarioValue.length >15){
+		else if(usuarioValue.length >20){
 			e.preventDefault();
 			setErrorFor(usuario,'Nombre de usuario muy largo.');
 		}
@@ -76,6 +77,8 @@ form.addEventListener('submit', e => {
 	}
 
 });
+
+
 
 
 

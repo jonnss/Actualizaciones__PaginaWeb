@@ -30,7 +30,7 @@
         </div>
      
        <div class="container-button-index">
-         <button onclick="location.href='registrarse.html'" class="button type3">Iniciar Sesión o Registrarme<i class="fas fa-user-check" id="icon-button-index"></i></button>
+         <button onclick="location.href='registrarse.php'" class="button type3">Iniciar Sesión o Registrarme<i class="fas fa-user-check" id="icon-button-index"></i></button>
        </div>
     </div> 
 
@@ -50,7 +50,7 @@
                     <ul>
                         <li><a href="manualRegistro.html">¿Cómo registrarme?</a></li>
                         <li><a href="buscarProblema.html">¿Cómo buscar un problema?</a></li>
-                        <li><a href="form.php">Iniciar Sesión | Registrarme</a></li>
+                        <li><a href="registrarse.php">Iniciar Sesión | Registrarme</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

@@ -7,21 +7,44 @@
         $correo = $_POST['correo'];
         $pw = $_POST['pw'];
         
-        $insertar ="INSERT INTO usuarios(usuario,correo,pw) VALUES ('$usuario','$correo','$pw')";        
+        //consulta para insertar un usuario
+        $insertar ="INSERT INTO usuarios(usuario,correo,pw) VALUES ('$usuario','$correo','$pw')";  
+        
+        //consulta para verificar usuario
+        $verificar_usuario = mysqli_query($conexion,"SELECT *FROM usuarios WHERE usuario = '$usuario'");
+        if(mysqli_num_rows($verificar_usuario)>0){
+            echo '<script>
+                alert("El nombre de usuario ya está registrado");
+                 window.history.go(-1);
+                 </script>';
+            exit;
+        }
+
+        //consulta para verificar correo
+        $verificar_correo = mysqli_query($conexion, "SELECT *FROM usuarios WHERE correo = '$correo'");
+        if(mysqli_num_rows($verificar_correo)>0){
+            echo '<script>
+                alert("El correo ya está registrado");
+                 window.history.go(-1);
+                 </script>';
+            exit;
+        }
 
         $resultado = mysqli_query($conexion, $insertar);
         if(!$resultado){
             echo '<script>
-                    alert("Error al registrarse");
+                    alert("Usuario no registrado");
+                    window.location.href = "../php/registrarse.php";
                     </script>';
             exit;
         }
         else{
-            '<script>
-                    alert("Correcto");
-                    window.location("index.php");
-                    </script>';
-            exit;
+            echo '<script>
+            alert("Usuario registrado exitosamente");
+            window.location.href = "../bienvenido.html";
+            </script>';
+    exit;
+
         }
 
     }
