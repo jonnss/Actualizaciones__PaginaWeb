@@ -29,9 +29,10 @@
           <p id="titulo_bienvenido">¡Bienvenido!, ¿Qué quieres hacer?</p>   
         </div>
      
-       <div class="container-button-index">
-         <button onclick="location.href='registrarse.php'" class="button type3">Iniciar Sesión o Registrarme<i class="fas fa-user-check" id="icon-button-index"></i></button>
-       </div>
+        <div class="container_buttons">
+          <button class="buttons_index" onclick="location.href='iniciar-sesion.php'">Iniciar sesión</button>     
+          <button class="buttons_index" onclick="location.href='registrarse.php'">Registrarme</button>    
+        </div>
     </div> 
 
     <footer class="footer">

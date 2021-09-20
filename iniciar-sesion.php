@@ -22,14 +22,14 @@
         <form method="post" action="../php/validar_login.php" id="form" class="form">
             <div class="form-control">
                 <label for="usuario">Usuario:</label>
-                <input type="text" placeholder="" id="usuario" name="usuario"/>
+                <input type="text" placeholder="Usuario" id="usuario" name="usuario" required/>
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-control">
                 <label for="pw">Contraseña:</label>
-                <input type="password" placeholder="" id="pw" name="pw"/>
+                <input type="password" placeholder="Contraseña" id="pw" name="pw" required/>
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>

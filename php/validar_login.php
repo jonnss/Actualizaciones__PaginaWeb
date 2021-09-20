@@ -15,9 +15,9 @@ if($datos > 0){
 }
 else{
     echo '<script>
-    alert("Usuario o contraseña incorrecto");
-    window.location.href = "../iniciar-sesion.php";
-    </script>';
+            alert("Usuario o contraseña incorrecto");
+            window.location.href = "../iniciar-sesion.php";
+        </script>';
 exit;
 }
 

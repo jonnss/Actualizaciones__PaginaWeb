@@ -14,8 +14,8 @@
         $verificar_usuario = mysqli_query($conexion,"SELECT *FROM usuarios WHERE usuario = '$usuario'");
         if(mysqli_num_rows($verificar_usuario)>0){
             echo '<script>
-                alert("El nombre de usuario ya está registrado");
-                 window.history.go(-1);
+                    alert("El nombre de usuario ya está registrado");
+                    window.history.go(-1);
                  </script>';
             exit;
         }
@@ -24,8 +24,8 @@
         $verificar_correo = mysqli_query($conexion, "SELECT *FROM usuarios WHERE correo = '$correo'");
         if(mysqli_num_rows($verificar_correo)>0){
             echo '<script>
-                alert("El correo ya está registrado");
-                 window.history.go(-1);
+                    alert("El correo ya está registrado");
+                    window.history.go(-1);
                  </script>';
             exit;
         }
@@ -35,14 +35,14 @@
             echo '<script>
                     alert("Usuario no registrado");
                     window.location.href = "../php/registrarse.php";
-                    </script>';
+                 </script>';
             exit;
         }
         else{
             echo '<script>
-            alert("Usuario registrado exitosamente");
-            window.location.href = "../bienvenido.html";
-            </script>';
+                    alert("Usuario registrado exitosamente");
+                    window.location.href = "../bienvenido.html";
+                </script>';
     exit;
 
         }
